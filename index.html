@@ -22,10 +22,12 @@
     } 
     body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        color: white;
-        background-color: #232325;
+        color: #232325;
+        background-color: #F5F5F5;
         position: relative;
         height: 100vh;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .container {
         max-width: 600px;
@@ -37,25 +39,37 @@
         transform: translate(-50%, -50%)
     }
     .link {
-        color: #8BC34A
+        color: #C88F3A
     }
-    h1 {
+    picture {
         font-size: 2.5rem;
         margin-bottom: 20px;
     }
-    h2 {
-        margin-bottom: 30px;
+    img {
+        width: 100%;
     }
-    a {
-
+    h1 {
+        font-size: medium;
+        margin-bottom: 30px;
     }
   </style>
 </head>
 
 <body>
     <div class="container">
-        <h1>Un café ? Atelier de torréfaction</h1>
-        <h2>🚧 Site en construction 🚧</h2>
+        <picture>
+            <img
+            sizes="(max-width: 2800px) 100vw, 2800px"
+            srcset="
+            logos/logo_cgigzc_c_scale,w_200.png 200w,
+            logos/logo_cgigzc_c_scale,w_1286.png 1286w,
+            logos/logo_cgigzc_c_scale,w_1937.png 1937w,
+            logos/logo_cgigzc_c_scale,w_2387.png 2387w,
+            logos/logo_cgigzc_c_scale,w_2800.png 2800w"
+            src="logos/logo_cgigzc_c_scale,w_2800.png"
+            alt="Un café ? Atelier de torréfaction">
+            </picture>
+        <h1>🚧 Site en construction 🚧</h1>
         <a class="link" href="mailto:contact@un-cafe-atelier-de-torrefaction.com">contact@un-cafe-atelier-de-torrefaction.com</a>
     </div>
 </body>
